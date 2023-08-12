@@ -34,7 +34,7 @@ export default function Textform(props) {
     const [count,setcount] = useState(0);
 
     return (
-        <div className='bg-dark text-white border border-primary my-3 rounded '>
+        <div className='bg-dark text-white border border-primary my-3 rounded border border-3'>
             <div>
                 <h1 className='my-3'>{props.heading}</h1>
                 <div classNameName="mb-3">
@@ -49,7 +49,7 @@ export default function Textform(props) {
                 <ul className="list-group list-group-flush border border-info rounded">
                     <li className="list-group-item border border-info">{count} Words</li>
                     <li className="list-group-item border border-info"> {text.length} characters</li>
-                    <li className="list-group-item border border-info">it will be take {0.008 * text.split(" ").length} Minutes</li>
+                    <li className="list-group-item border border-info">it will be take {0.008 * count} Minutes</li>
                 </ul>
                 <h2 className='my-3'>Preview</h2>
                 <p>{text}</p>
