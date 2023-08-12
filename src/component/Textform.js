@@ -13,10 +13,15 @@ export default function Textform(props) {
 
     const cleartextfunc = () => {
         settext('');
+        countword();
     }
 
     const handleonchange = (event) => {
         settext(event.target.value);
+        countword();
+    }
+
+    const countword = (event) => {
         if(event.target.value == '')
         {
             setcount(0);
@@ -26,7 +31,6 @@ export default function Textform(props) {
         const c = text.split(' ').length;
         setcount(c);
         }
-    
     }
     
     const [text, settext] = useState("");
